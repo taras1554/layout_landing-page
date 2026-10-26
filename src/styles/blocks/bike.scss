@@ -1,0 +1,11 @@
+@use '../utils/variables.scss' as *;
+@use '../utils/mixins' as *;
+
+.bike {
+
+  &__photo {
+    width: 100%;
+  }
+
+
+}
