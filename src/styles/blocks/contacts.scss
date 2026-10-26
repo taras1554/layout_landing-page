@@ -9,7 +9,7 @@
   }
 
   &__wrapper {
-    @include page-Grid;
+    @include pageGrid;
 
     row-gap: 40px;
   }
