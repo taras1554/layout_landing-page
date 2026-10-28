@@ -12,7 +12,7 @@
     />
     <title>MyBiKE</title>
 
-    <link rel="icon"  href="src/images/MyBiKE.png" sizes="32x32">
+    <link rel="icon"  href="src/images/MyBiKE.svg" sizes="32x32">
     <link
       rel="stylesheet"
       href="src/styles/style.scss"
@@ -50,14 +50,13 @@
               />
             </a>
             <div class="top__bar__icons">
-              <a
-                href="tel:+1 234 5555-55-55"
-                class="icon icon--phone"
-              ></a>
-              <a
-                href="#menu"
-                class="icon icon--menu"
-              ></a>
+
+              <a href="tel:+123455555555" class="phone-link">
+                <span class="phone-number">+1 234 5555-55-55</span>
+                <span class="icon icon--phone"></span>
+              </a>
+
+              <a href="#menu" class="icon icon--menu"></a>
             </div>
           </div>
           <div class="header__bottom">
@@ -73,14 +72,8 @@
     >
       <div class="container">
         <div class="top__bar menu__top">
-          <a
-            href="#"
-            class="top__bar__logo"
-          >
-            <img
-              src="/src/images/MyBiKE.png"
-              alt="MYBike logo"
-            />
+          <a href="#" class="top__bar__logo-link">
+            <img src="/src/images/MyBiKE.png" alt="MyBiKE logo" class="top__bar__logo" />
           </a>
           <a
             href="#"
@@ -206,7 +199,7 @@
                   class="bike__photo"
                 />
                 <h3 class="bike__title">Agile ride 3</h3>
-                <p class="bike__description"> <!-- Changed from bike__deskription -->
+                <p class="bike__description">
                   The lightweight frame that has earned its street tread as a sleek,
                   agile ride.
                 </p>
@@ -216,81 +209,63 @@
             </div>
           </section>
 
-          <section
-            class="details"
-            id="details"
-          >
+          <section class="details" id="details">
             <h2 class="section-title">The details</h2>
             <div class="details__wrapper">
+
               <article class="detail">
                 <div class="detail__photos">
                   <a href="#" class="detail__link detail__link--wide">
-                    <img
-                    class="detail__photo"
-                    src="/src/images/image 1.png"
-                    alt="Auto Unlock">
+                    <img class="detail__photo" src="/src/images/image 1.png" alt="Auto Unlock">
                   </a>
-
-
-
                   <a href="#" class="detail__link detail__link--square">
-                    <img
-                    class="detail__photo"
-                    src="/src/images/image 8.png"
-                    alt="Auto Unlock">
+                    <img class="detail__photo" src="/src/images/image 8.png" alt="Auto Unlock">
                   </a>
                 </div>
 
-                <h3 class="detail__title">Auto Unlock</h3>
-                <p class="detail__description">The app senses when you're nearby to unlock automatically. GPS tracking so you know where your bike is and can track it anytime.</p>
+                <div class="detail__content">
+                  <h3 class="detail__title">Auto Unlock</h3>
+                  <p class="detail__description">The app senses when you're nearby to unlock automatically. GPS tracking so you know where your bike is and can track it anytime.</p>
+                </div>
               </article>
 
               <article class="detail">
                 <div class="detail__photos">
                   <a href="#" class="detail__link detail__link--wide">
-                    <img
-                    class="detail__photo"
-                    src="/src/images/image 9.png"
-                    alt="Range & Integrated lights">
+                    <img class="detail__photo" src="/src/images/image 9.png" alt="Range & Integrated lights">
                   </a>
-
-
-
                   <a href="#" class="detail__link detail__link--square">
-                    <img
-                    class="detail__photo"
-                    src="/src/images/image 7.png"
-                    alt="Range & Integrated lights">
+                    <img class="detail__photo" src="/src/images/image 7.png" alt="Range & Integrated lights">
                   </a>
                 </div>
 
-                <h3 class="detail__title">Range & Integrated lights</h3>
-                <p class="detail__description">The removable battery has up to 70km battery autonomy and weighs only 2.4 kg. Lights integrated into the frame give you always-on visibility day and night.</p>
+                <div class="detail__content">
+                  <h3 class="detail__title">Range & Integrated lights</h3>
+                  <p class="detail__description">The removable battery has up to 70km battery autonomy and weighs only 2.4 kg. Lights integrated into the frame give you always-on visibility day and night.</p>
+                </div>
               </article>
 
               <article class="detail">
                 <div class="detail__photos">
                   <a href="#" class="detail__link detail__link--square">
-                    <img
-                    class="detail__photo"
-                    src="/src/images/image 11.png"
-                    alt="Hydraulic disc brakes & Lightweight">
+                    <img class="detail__photo" src="/src/images/image 11.png" alt="Hydraulic disc brakes & Lightweight">
                   </a>
-
                   <a href="#" class="detail__link detail__link--wide">
-                    <img
-                    class="detail__photo"
-                    src="/src/images/image 10.png"
-                    alt="Hydraulic disc brakes & Lightweight">
+                    <img class="detail__photo" src="/src/images/image 10.png" alt="Hydraulic disc brakes & Lightweight">
                   </a>
                 </div>
 
-                <h3 class="detail__title">Hydraulic disc brakes & Lightweight</h3>
-                <p class="detail__description">Brakes with total stopping power the second you make contact. The removable battery has up to 70km battery autonomy and weighs only 2.4 kg. Lights integrated into the frame give you always-on visibility day and night.</p>
+                <div class="detail__content">
+                  <h3 class="detail__title">Hydraulic disc brakes & Lightweight</h3>
+                  <p class="detail__description">Brakes with total stopping power the second you make contact. The removable battery has up to 70km battery autonomy and weighs only 2.4 kg. Lights integrated into the frame give you always-on visibility day and night.</p>
+                </div>
               </article>
-              <button class="detail__button">Explore</button>
+
+
+              <button class="details__button">Explore</button>
             </div>
           </section>
+
           <section class="contacts" id="contacts">
             <h2 class="section-title contacts__title">Contact us</h2>
 
@@ -301,6 +276,7 @@
 
                 <input
                   type="text"
+                  name="Name"
                   placeholder="Name"
                   class="contacts__input"
                   required
@@ -310,6 +286,7 @@
 
                 <input
                   type="email"
+                  name="Email"
                   placeholder="Email"
                   class="contacts__input"
                   required
@@ -318,6 +295,7 @@
 
                 <textarea
                   placeholder="Message"
+                  name="Message"
                   class="contacts__input contacts__input--textarea"
                   required
                 ></textarea>
@@ -348,7 +326,7 @@
             </div>
           </section>
 
-        </main__content>
+        </div>
       </div>
     </main>
 

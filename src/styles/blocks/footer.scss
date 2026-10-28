@@ -1,27 +1,16 @@
 @use '../utils/variables.scss' as *;
 @use '../utils/mixins' as *;
-
 .footer {
+  position: sticky;
+  bottom: 0;
+  z-index: -1;
+
   background-image: url("/src/images/footer.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
-
-
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-
   height: 250px;
 
-  @include onTablet {
-    height: 400px;
-  }
-
-  @include onDesktop {
-    height: 555px;
-  }
+  @include onTablet { height: 400px; }
+  @include onDesktop { height: 555px; }
 }
-

@@ -1,4 +1,36 @@
 @use '../utils/mixins' as *;
+@use '../utils/variables.scss' as *;
+
+
+.phone-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  gap: 12px;
+
+  .phone-number {
+    opacity: 0;
+    visibility: hidden;
+    white-space: nowrap;
+    color: $text-color;
+    font-size: 16px;
+    font-weight: 500;
+    transform: translateX(10px);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  }
+
+
+  &:hover .phone-number {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+
+  &:hover .icon--phone {
+    transform: scale(1.2);
+  }
+}
 
 
 .icon {
@@ -8,9 +40,8 @@
   background-size: cover;
   transition: transform 0.3s;
 
+
   @include hover(transform, scale(1.2));
-
-
 
   @include onTablet {
     height: 32px;

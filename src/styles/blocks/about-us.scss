@@ -8,11 +8,11 @@
     grid-column: 1/-1;
 
     @include onTablet {
-      grid-column: 1/4;
+      grid-column: span 3;
     }
 
     @include onDesktop {
-      grid-column: 1/6;
+      grid-column: span 5;
     }
   }
 
@@ -21,7 +21,7 @@
     grid-column: 1/-1;
 
     @include onTablet {
-      grid-column: 4/-1;
+      grid-column: span 3;
     }
 
     @include onDesktop {
