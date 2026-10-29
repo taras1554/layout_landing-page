@@ -1,6 +1,7 @@
 @use '../utils/mixins' as *;
 
 .page {
+  background-color: #1d1d1d;
   color: rgba(255, 255, 255, 1);
   font-family: Poppins, sans-serif;
   font-size: 16px;
@@ -8,10 +9,9 @@
   scroll-behavior: smooth;
 
   &__body {
+
     margin: 0;
     min-width: 320px;
-    background-color: black;
-    color: white;
   }
 
   &__menu {

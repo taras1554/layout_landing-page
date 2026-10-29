@@ -85,20 +85,23 @@
 
 
   &__button {
-    box-sizing: border-box;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 56px;
-    padding: 0 48px;
+    color: #1d1d1d;
+    background-color: #fff;
     border-radius: 40px;
-    border: none;
-    background-color: $text-color;
-    color: rgba(0, 0, 0, 1);
-    font-weight: 700;
+    border: 0;
+    font-family: inherit;
     font-size: 16px;
+    font-weight: 700;
     line-height: 27px;
-    text-transform: uppercase;
+    text-decoration: none;
     cursor: pointer;
-
     transition: transform 0.2s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 
     &:hover {
@@ -129,7 +132,7 @@
       display: inline-block;
 
 
-      @include hover(color, aqua);
+      @include hover(color, rgb(153, 156, 156));
     }
   }
 }

@@ -13,21 +13,25 @@
 
 
   &__button {
-    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto 0;
     width: 100%;
+    max-width: 324px;
     height: 56px;
-    padding: 0 48px;
+    color: $main-text-color;
     border-radius: 40px;
-    border: none;
-    background-color: $text-color;
-    color: rgba(0, 0, 0, 1);
-    font-weight: 700;
+    border: 0;
+    text-align: center;
+    font-family: inherit;
     font-size: 16px;
+    font-weight: 700;
     line-height: 27px;
-    text-transform: uppercase;
+    text-decoration: none;
     cursor: pointer;
-
-    transition: transform 0.2s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 
     &:hover {
       box-shadow: 1px 4px 16px 0 rgba(232, 232, 240, 1);

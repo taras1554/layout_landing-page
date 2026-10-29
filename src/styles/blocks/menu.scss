@@ -16,17 +16,17 @@
 
   overflow: hidden auto;
 
-  background-color: rgba(194, 194, 194, 1);
+  background-color: #c2c2c2;
   font-family: Poppins, sans-serif;
   font-weight: 600;
   font-style: normal;
   text-transform: uppercase;
 
 
-  padding: 24px;
+
 
   &__top {
-    margin-bottom: 32px;
+    margin-bottom: 24px;
 
     @include onTablet {
       margin-bottom: 0;
@@ -50,7 +50,6 @@
     color: $main-text-color;
     text-decoration: none;
 
-    @include hover(color, aqua);
   }
 
 
@@ -65,6 +64,5 @@
     color: $main-text-color;
     text-decoration: none;
 
-    @include hover(color, aqua);
   }
 }
